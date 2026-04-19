@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Nişanyan Sözlük Popup",
+  "version": "1.9",
+  "author": "Oğul Güney",
+  "description": "Seçili kelimeyi Nişanyan Sözlük'te arayan gizlilik odaklı popup eklentisi.",
+  "permissions": ["contextMenus", "tabs"],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "nisanyan-popup@ogul.dev",
+      "strict_min_version": "142.0",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
+    }
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
