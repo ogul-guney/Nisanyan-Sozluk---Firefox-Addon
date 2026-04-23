@@ -1,0 +1,25 @@
+PROJECT: Nişanyan: Hızlı Arama
+VERSION: 2.0
+AUTHOR: Oğul Güney
+DATE: 2026-04-23
+
+[NEW FEATURES]
+- Z-Index Shield: Dinamik olarak sayfanın en yüksek katmanını (max z-index) hesaplar ve popup'ı her zaman en üstte tutar.
+-Icon: Sağ tık menüsüne Nişanyan Sözlük ikonu eklendi.
+- Frosted Glass: Arka plana 20px blur ve %80 opaklık eklendi.
+- Auto-Theming: prefers-color-scheme üzerinden sistem temasıyla senkronizasyon.
+- Progress Bar: Spinner yerine üst kısma %100 yükleme animasyonlu minimalist mavi çizgi eklendi.
+
+[UX & INTERACTION]
+- Akıllı Sabitleme: Popup'ın ekranın sağ/sol konumuna göre genişleme yönünü otomatik değiştiren anchor-point mantığı.
+- Klavye Kısayolları: S (Küçük), M (Orta), ENTER (Yeni Sekme), ESC (Kapat) tuşları entegre edildi.
+- Parlaklık Efekti: Kontrol butonlarına hover anında brightness(1.5) ve drop-shadow ile derinlik eklendi.
+
+[STABILITY & FIXES]
+- Event Listener Cleanup: Popup kapandığında tüm klavye dinleyicileri temizlenir (Hayalet Enter sorunu giderildi).
+- Drag Optimization: Sürükleme sırasında iframe pointer-event'leri deaktive edilerek takılmalar önlendi.
+- Layout Guard: Iframe yüklenirken oluşan beyaz sıçramalar transparent background ile yumuşatıldı.
+
+
+-----
+iletişim için: ogulgnyy@gmail.com
